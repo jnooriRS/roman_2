@@ -1,9 +1,6 @@
 import click
 
 
-@click.command()
-@click.argument("roman_numeral")
-@click.option("--roman", prompt="Roman numeral to convert please", type=str)
 def to_arabic_number(roman) -> int:
     roman_table = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     result = 0
@@ -18,6 +15,13 @@ def to_arabic_number(roman) -> int:
             result += roman_table[roman[numeral]]
 
     return result
+
+
+@click.command()
+@click.argument("roman_numeral")
+@click.option("--roman", prompt="Roman numeral to convert please", type=str)
+def to_arabic_number_cli(roman):
+    return to_arabic_number(roman)
 
 
 if __name__ == "__main__":
