@@ -1,6 +1,6 @@
 import pytest
 
-from to_roman_numeral_converter import to_arabic_number
+from to_arabic_numeral_converter import to_arabic_number
 
 
 def test_to_arabic_number_1_rta():
