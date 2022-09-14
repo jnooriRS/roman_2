@@ -18,11 +18,12 @@ def to_arabic_number(roman) -> int:
 
 
 @click.command()
-@click.argument("roman_numeral")
+# @click.argument("roman_numeral")
 @click.option("--roman", prompt="Roman numeral to convert please", type=str)
 def to_arabic_number_cli(roman):
     return to_arabic_number(roman)
 
 
 if __name__ == "__main__":
+    to_arabic_number_cli(),
     print(to_arabic_number())

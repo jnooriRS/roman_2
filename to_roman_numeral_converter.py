@@ -24,6 +24,7 @@ def to_roman_numeral(arabic_number) -> str:
             result += roman_symbol * count
             arabic_number = arabic_number % value
     return result
+    # print(result)
 
 
 @click.command()
@@ -33,4 +34,5 @@ def to_roman_numeral_cli(arabic_number):
 
 
 if __name__ == "__main__":
+    print(to_roman_numeral_cli()),
     print(to_roman_numeral())
