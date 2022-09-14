@@ -34,5 +34,5 @@ def to_roman_numeral_cli(arabic_number):
 
 
 if __name__ == "__main__":
-    print(to_roman_numeral_cli()),
-    print(to_roman_numeral())
+    print(to_roman_numeral(to_roman_numeral_cli))
+    print(to_roman_numeral_cli())

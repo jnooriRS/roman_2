@@ -1,7 +1,9 @@
 import click
 
 
-def to_arabic_number(roman) -> int:
+def to_arabic_number(roman):
+    # largest to smallest- add them up
+    # smallest to largest- minus them
     roman_table = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     result = 0
 
@@ -25,5 +27,5 @@ def to_arabic_number_cli(roman):
 
 
 if __name__ == "__main__":
-    to_arabic_number_cli(),
-    print(to_arabic_number())
+    # to_arabic_number_cli()
+    print(to_arabic_number(to_arabic_number_cli))
