@@ -6,7 +6,7 @@ def to_arabic_number(roman):
     # smallest to largest- minus them
     roman_table = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     result = 0
-
+    # Does the numeral have a value after it, if so is it greatrer or less than?
     for numeral in range(len(roman)):
         if (
             numeral + 1 < len(roman)
@@ -15,7 +15,7 @@ def to_arabic_number(roman):
             result -= roman_table[roman[numeral]]
         else:
             result += roman_table[roman[numeral]]
-
+    # Return the result with the value
     return result
 
 
@@ -27,5 +27,5 @@ def to_arabic_number_cli(roman):
 
 
 if __name__ == "__main__":
-    # to_arabic_number_cli()
+    to_arabic_number_cli()
     print(to_arabic_number(to_arabic_number_cli))

@@ -1,5 +1,6 @@
 Lettcode 13 - easy
 convert roman to integer/practise
+
 when to minus or subtract is dependant on order of numerals
 bigger values on the left and smaller on the right
 loop through in reverse order
@@ -20,3 +21,5 @@ output 1994
 Explanation M= 1000, CM= 900, XC = 90 and IV=4
 1000 + (1000-100) + (100-10) + (5-1)
 M    +   (M-C)    +    (-X + C) +  (-1 + 5)
+
+convert Arabic to Roman/practise
