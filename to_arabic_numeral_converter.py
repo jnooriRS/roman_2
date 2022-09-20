@@ -23,9 +23,11 @@ def to_arabic_number(roman):
 # @click.argument("roman_numeral")
 @click.option("--roman", prompt="Roman numeral to convert please", type=str)
 def to_arabic_number_cli(roman):
-    return to_arabic_number(roman)
+    print("hello-world")
+    result = to_arabic_number(roman)
+    print(result)
+    # return result
 
 
 if __name__ == "__main__":
     to_arabic_number_cli()
-    print(to_arabic_number(to_arabic_number_cli))
